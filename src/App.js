@@ -1,5 +1,5 @@
 import Footer from './component/Footer.js';
-import Header from './component/Header.js';
+import Menu from './component/Menu.js';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
@@ -7,7 +7,7 @@ import Home from './pages/Home.js';
 function App() {
   return (
     <>
-      <Header/>
+      <Menu/>
       <Router>
         <Route exact path="/" component = {Home}/>
       </Router>      
