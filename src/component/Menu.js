@@ -1,14 +1,34 @@
 import React, {useState} from 'react';
 import '../scss/Menu.scss';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Switch from '@material-ui/core/Switch';
 
 function Menu(){
     return (
         
         <section className="menu-wrap">
-            <div></div>
+            <div className="menuHideButton">버튼</div>
+            <ul>
+                <li>
+                    <div className="menuLogo"></div>
+                </li>                
+                <li>
+                    <div className="menuContour"></div>
+                </li>
+                <li>
+                    <form>
+                        <label>
+                            <input type="text" name="name"/>
+                            <input type="password" name="passwoprd"/>
+                            
+                        </label>
+                    </form>
+                </li>
+                <li>
+                </li>                
+                <li>
+                    <div className="menuSignup">회원가입</div>
+                </li>
 
+            </ul>
         </section>
         
      
