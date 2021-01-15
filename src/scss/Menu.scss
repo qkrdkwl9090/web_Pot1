@@ -5,24 +5,25 @@
     left:0;
     width: 20%;
     max-width: 384px;
+    padding:10% 0;
     border: none;
     height:100%;
     background-color: #222d3b;
     text-align: center;
     ul{
-        margin: 50px auto;
+        margin: 0 auto;
         li{
             width:100%;
             .menuLogo{
                 height:200px;
                 width: 200px;
-                margin: 0 auto 20px;
+                margin: 0 auto 40px;
                 background: black;
                 border-radius: 50px;
             }
             .menuContour{
-                background: #11b772;
-                margin:0 auto 20px;
+                background: #3f51b5;
+                margin:0 auto 40px;
                 height:5px;
                 border-radius: 50px;
                 width: 80%
@@ -37,10 +38,76 @@
                    }
                } 
             }
+            form{
+                margin-bottom: 2rem;
+                #inputId{
+                    color:white;
+                }
+                #inputPw{
+                    color:white;
+                }
+            }
+            .menuSignup{
+                height:2rem;
+                width:40%;
+                margin: 0 auto;
+                border: 1px solid black;
+                padding-top: 0.6rem;
+                background-color:#222d3b;
+                border-radius: 20px;
+                &:active{
+                    transition: 0.2s;
+                    background:lighten( #222d3b, 10%);
+                    color:white;
+                }
+                &:hover{
+                    transition: 0.1s;
+                    background:darken( #222d3b, 10%);
+
+                    color:white;
+                }
+            }
+            .menuLogin{
+                height:2rem;
+                width:40%;
+                margin: 0 auto;
+                border: 1px solid black;
+                padding-top: 0.6rem;
+                background-color:#222d3b;
+                border-radius: 20px;
+                margin-bottom: 1rem;
+                
+                &:active{
+                    transition: 0.2s;
+                    background:lighten( #222d3b, 10%);
+                    color:white;
+                }
+                &:hover{
+                    transition: 0.1s;
+                    background:darken( #222d3b, 10%);
+
+                    color:white;
+                }
+            }
         }
     }
     
     .menuHideButton{
+        padding:5px;
         text-align: right;
+        position: absolute;
+        top:50px;
+        right:10px;
+        svg{
+            width:50px;
+            height:50px;
+        }
+        &:hover{            
+            background:darken( #222d3b, 10%);
+        }
+        
+        &:active{            
+            background:darken( #222d3b, 10%);
+        }
     }
 }
