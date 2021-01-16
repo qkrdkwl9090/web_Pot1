@@ -1,15 +1,19 @@
 import Footer from './component/Footer.js';
-import Menu from './component/Menu.js';
+import NavBar from './component/NavBar.js';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './pages/Home.js';
-
+import home from './pages/Home';
+import account from './pages/Account';
+import mail from './pages/Mail';
 function App() {
   return (
     <>
-      <Menu/>
       <Router>
-        <Route exact path="/" component = {Home}/>
+        
+            <NavBar/>
+            <Route path="/" exact={true} component={home}/>
+            <Route path="/account" component={account}/>
+            <Route path="/mail" component={mail}/>
       </Router>      
       <Footer/>
     </>

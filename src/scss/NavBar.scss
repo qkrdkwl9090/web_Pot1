@@ -1,0 +1,127 @@
+.menu-wrap-hide{
+    z-index: 20;
+    position: fixed;
+    left:0;
+    width: 80px;
+    max-width: 384px;
+    padding:10% 0;
+    border: none;
+    height:100%;
+    background-color: #222d3b;
+    text-align: center;
+
+    .menuHideButton{
+        padding:15px;
+        text-align: right;
+        position: absolute;
+        top:50px;
+        right:10px;
+        svg{
+            width:30px;
+            height:30px;            
+            color:white;
+        }
+        &:hover{            
+            background:darken( #222d3b, 10%);
+        }
+        
+        &:active{            
+            background:darken( #222d3b, 10%);
+        }
+    }
+    ul{
+        margin: 0 auto;
+        .nav-text{
+            color:white;
+    }
+        li{
+            padding:25px;
+            a{
+                text-align: left;
+                span{
+                    color:white;
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                    display: none;
+                }
+                svg{
+                    color:white;
+                    width:30px;
+                    height:30px;
+                    margin-bottom: 1rem;
+                }
+                
+
+            }
+            &:hover{
+                
+                 background-color:darken(#222d3b,10%);
+            }
+        }
+    }
+}
+
+
+.menu-wrap{    
+    z-index: 20;
+    position: fixed;
+    left:0;
+    width: 20%;
+    max-width: 300px;
+    padding:10% 0;
+    border: none;
+    height:100%;
+    background-color: #222d3b;
+    ul{
+        margin: 0 auto;
+        .nav-text{
+            color:white;
+    }
+        li{
+            padding:30px;
+            a{
+                
+                display: table;
+                span{
+                    vertical-align: middle;
+                    display: table-cell;
+                    color:white;
+                    font-size: 18px;
+                    display:none;
+                }
+                svg{
+                    color:white;
+                    margin-right:2rem;
+                    width:30px;
+                    height:30px;
+                }
+                
+
+            }
+            &:hover{
+                
+                 background-color:darken(#222d3b,10%);
+            }
+        }
+    }
+    
+    .menuHideButton{
+        padding:15px;
+        text-align: right;
+        position: absolute;
+        top:50px;
+        right:10px;
+        svg{
+            width:30px;
+            height:30px;
+            color:white;
+        }
+        &:hover{            
+            background:darken( #222d3b, 10%);
+        }
+        
+        &:active{            
+            background:darken( #222d3b, 10%);
+        }
+    }
+}

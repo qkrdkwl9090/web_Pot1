@@ -1,15 +1,19 @@
 import React, {useState} from 'react';
 import '../scss/Menu.scss';
 import { InputLabel, TextField } from '@material-ui/core';
-import { VscChevronLeft } from "react-icons/vsc";
+import { VscMenu } from "react-icons/vsc";
+import logo1 from "../images/logo.svg";
 function Menu(){
+    const [hide, setHide] = useState(false);
+
+    const showSidebar = () => setHide(!hide);
     return (
         
         <section className="menu-wrap">
-            <div className="menuHideButton"><VscChevronLeft/></div>
+            <div className="menuHideButton" onClick={showSidebar}><VscMenu/></div>
             <ul>
                 <li>
-                    <div className="menuLogo"></div>
+                    <div className="menuLogo"><img src={logo1}/></div>
                 </li>                
                 <li>
                     <div className="menuContour"></div>
