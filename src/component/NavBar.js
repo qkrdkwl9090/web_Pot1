@@ -5,7 +5,7 @@ import {NavBarData} from './NavBarData';
 import {Route,Link} from 'react-router-dom';
 
 function Menu(){
-    const [hide, setHide] = useState(false);
+    const [hide, setHide] = useState(true);
 
     const showSidebar = () => setHide(!hide);
     return (

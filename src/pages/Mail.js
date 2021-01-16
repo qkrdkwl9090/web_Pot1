@@ -5,7 +5,7 @@ function mail(){
     return(
         <div className="home-wrap">
             <p>
-           ACCOUNT</p>
+           Mail</p>
 
 
         </div>

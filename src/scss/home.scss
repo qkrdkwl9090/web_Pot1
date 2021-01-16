@@ -1,11 +1,45 @@
 .home-wrap{
     background-color: #263545;
-    width:100%;
+    margin-left:80px;
     height:100%;
-    display: table;
-    text-align: center;
-    p{        
-        display: table-cell;
-        vertical-align: middle;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 400px auto;
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-items: center;
+    .itemChild1{grid-column: 1}    
+    .itemChild2{grid-column: 2}    
+    .itemChild3{grid-column: 3}    
+    .itemChild4{grid-column: 4}
+    .topCon{
+        background-color: #222d3b;
+        border-radius: 20px;
+        width:90%;
+        height:90px;
+        &:hover{
+            background-color:lighten(#222d3b,10%)
+        }
+    }
+    .myWallet{            
+        background-color: #3f51b5;
+            
+        &:hover{
+            background-color:lighten(#3f51b5,10%)
+        }
+    }
+
+    
+    .chartCon{
+        grid-column: 3 / span 2;
+        grid-row: 2;
+        margin:30px;
+        padding:15px;    
+        width: 91%;        
+        background-color: #222d3b;
+        border-radius: 20px;
+        div{ 
+            margin:0 auto;
+        }
     }
 }
