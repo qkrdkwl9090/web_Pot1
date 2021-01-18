@@ -2,10 +2,10 @@ import React from 'react';
 import "../scss/Login.scss";
 import logo from "../images/logo.svg";
 import google from "../images/google.svg";
-import {  TextField, ThemeProvider } from '@material-ui/core';
 import {signInWithGoogle} from "../fireabaseConfig";
+import BasicTextFields from "../component/inputField";
 
-function login(){
+function Login(){
     return(
         <div className="login">
             <header>
@@ -28,13 +28,9 @@ function login(){
                         <li>
                             <div className="menuContour"></div>
                         </li>
-                        <li>
-                            <form>                       
-                                <TextField className="textfield" label="ID" variant="outlined" 
-          margin="dense"/>
-                                <TextField className="textfield" label="PW" type="password" 
-          margin="dense" variant="outlined"/>                            
-                            </form>
+                        <li>   
+                            <BasicTextFields placeholder="ID" ></BasicTextFields>                 
+                            <BasicTextFields type="password" placeholder="PW"></BasicTextFields>   
                         </li>         
                         <li>
                             <div className="menuLogin"><p>Login</p></div>
@@ -54,4 +50,4 @@ function login(){
         </div>
     )
 }
-export default login;
+export default Login;
