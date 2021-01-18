@@ -38,7 +38,7 @@ function home(){
                 </div>
               </div>
               <div className="topCon itemChild2">
-                <div className="walletCon">
+                <div className="topConbit">
                     관심 종목
                     <div className="coutour"></div>
                     <div className="price">300,000원</div>

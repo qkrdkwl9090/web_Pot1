@@ -22,7 +22,7 @@ export const NavBarData = [
     },
     {
         title: 'Logout',
-        path: '/logout',
+        path: '/login',
         icon: <VscSignOut/>,
         cName: 'nav-text'
     },
