@@ -5,6 +5,7 @@ import google from "../images/google.svg";
 import {signInWithGoogle} from "../fireabaseConfig";
 import BasicTextFields from "../component/inputField";
 import { VscChevronLeft } from "react-icons/vsc";
+import {Link} from 'react-router-dom';
 function Login(){
     const [signup, setSignup] = useState(false);
     const singupButton = () => {
@@ -41,7 +42,7 @@ function Login(){
                             <BasicTextFields type="password" placeholder="PW"></BasicTextFields>   
                         </li>         
                         <li>
-                            <div className="menuLogin"><p>Login</p></div>
+                            <Link to="/home"><div className="menuLogin"><p>Login</p></div></Link>
                         </li>                
                         
                         <li>
