@@ -97,6 +97,20 @@
                 }
             }
             
+            .signup{
+                .backButton{
+                    color:#3f51b5;
+                    text-align: left;
+                    width: 30px;
+                    svg{
+                        width:30px;
+                        height:30px;
+                    }
+                    &:hover{
+                        background-color: darken($color: #282c34, $amount: 5%);
+                    }
+                }
+            }
         }    
     }
 
@@ -114,6 +128,7 @@ header{
         width:150px;
     }        
 }
-.menu-wrap-hide{
+.no-display{
     display:none;
+    transition: 1s;
 }
