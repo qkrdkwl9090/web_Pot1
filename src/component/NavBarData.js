@@ -4,7 +4,7 @@ import { VscAccount,VscMail,VscHome,VscSignOut } from "react-icons/vsc";
 export const NavBarData = [
     {
         title: 'Home',
-        path: '/',
+        path: '/home',
         icon: <VscHome/>,
         cName: 'nav-text'
     },
@@ -22,7 +22,7 @@ export const NavBarData = [
     },
     {
         title: 'Logout',
-        path: '/login',
+        path: '/',
         icon: <VscSignOut/>,
         cName: 'nav-text'
     },
