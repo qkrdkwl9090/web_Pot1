@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from './component/NavBar.js';
+import SideBar from './component/SideBar';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import home from './pages/Home';
 
 import { auth } from './fireabaseConfig';
@@ -23,11 +23,6 @@ class App extends React.Component{
   }
   unsubscribeFromAuth = null;
 
-  componentDidMount() {
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-      this.setState({ currentUser: user });
-    });
-  }
   
   componentWillUnmount() {
     this.unsubscribeFromAuth();
@@ -38,13 +33,11 @@ class App extends React.Component{
       <>
       
         <Router>      
-              <Route path="/" exact={true} component={login}/>
-
-
-              <NavBar/>
-              <Route path="/home" component={home}/>
-              <Route path="/account" component={account}/>
-              <Route path="/mail" component={mail}/>
+           <Route exact path="/"  component={login}/>
+           <SideBar/>
+           <Route path="/home" component={home}/>
+           <Route path="/account" component={account}/>
+           <Route path="/mail" component={mail}/>
         </Router>      
       </>
     );
