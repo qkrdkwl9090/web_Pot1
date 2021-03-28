@@ -29,9 +29,7 @@ function SideMenu(props){
             <div className ="menuName">{item.title}</div>
                 <span className = "childState">
                     {
-                        item != '' ?
-                        (childHide ? <VscChevronDown/> : <VscChevronUp/>) : 
-                        <></>
+                        childHide ? <VscChevronDown/> : <VscChevronUp/> 
                     }
                 </span>
             </div>

@@ -20,7 +20,15 @@ function SideBar(){
                     )
                 })}
                 <Link to={'/'}>
-                <li className="nav-text"><VscSignOut/>Logout</li>
+
+                    
+                <li className="nav-text">
+                    <div className="parentMenu">
+                    <VscSignOut/><div className="menuName">Logout</div>
+
+                    </div>
+                    </li>
+                    
                 </Link>
 
 

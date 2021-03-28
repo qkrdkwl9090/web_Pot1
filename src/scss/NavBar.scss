@@ -16,6 +16,9 @@
         position: absolute;
         top:50px;
         right:10px;
+        a:link{
+            color:white;
+        }
         svg{
             width:30px;
             height:30px;            
@@ -56,6 +59,13 @@
                 }
             }
 
+            .sub-menu-wrap{
+                display:none;
+                li{
+                    display:none;
+                    
+                }
+            }
   
                 
 
@@ -80,9 +90,21 @@
     height:100%;
     background-color: #323d4b;
     ul{
+        svg{
+            color:white;
+            margin-right:2rem;
+            width:30px;
+            height:30px;
+        }
         margin: 0 auto;
         .nav-text{
             color:white;
+            svg{
+                color:white;
+                margin-right:2rem;
+                width:30px;
+                height:30px;
+            }
         }
         li{
             color: white;
@@ -92,12 +114,6 @@
                     display: table-cell;
                     color:white;
                     font-size: 18px;
-            }
-            svg{
-                color:white;
-                margin-right:2rem;
-                width:30px;
-                height:30px;
             }
                 
             .parentMenu{
@@ -124,7 +140,9 @@
             }
 
             .sub-menu-wrap{
+                margin-top: 1rem;
                 li{    
+                    
                     padding: 13px 13px 20px;
                     transition: 1s;
                     height:10px;
